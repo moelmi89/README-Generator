@@ -13,7 +13,7 @@ const questions = [{
     {
         type: "input",
         name: "Description",
-        message: "Provide a detailed description of your project"
+        message: "Provide a description of your project"
     },
     {
         type: "input",
@@ -23,17 +23,17 @@ const questions = [{
     {
         type: "input",
         name: "Installation",
-        message: "What are the steps required to install your project? Provide a step-by-step description."
+        message: "What are the steps required to install your project?"
     },
     {
         type: "input",
         name: "Usage",
-        message: "Provide instructions and examples for use. Include screenshots as needed."
+        message: "Provide instructions and examples for use"
     },
     {
         type: "input",
         name: "Credits",
-        message: "List your collaborators, if any, with links to their GitHub profiles"
+        message: "List your collaborators"
     },
     {
         type: "input",
