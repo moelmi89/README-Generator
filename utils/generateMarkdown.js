@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
   if (license === "none") {
     return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]"
   }
-  return "" 
+  return ""
 }
 
 // TODO: Create a function that returns the license link
@@ -29,7 +29,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
   # Description
-  ${data.Description}
+  ${data.description}
   # Table of Contents 
   * [Installation](#installation)
   * [Usage](#usage)
@@ -38,18 +38,18 @@ function generateMarkdown(data) {
   * [Tests](#tests)
   * [Questions](#questions)
   # Installation
-  The following necessary dependencies must be installed to run the application properly: ${data.Installation}
+  The following necessary dependencies must be installed to run the application properly: ${data.installation}
   # Usage
-  In order to use this app, ${data.Usage}
+  In order to use this app, ${data.usage}
   # License
-  This project is licensed under the ${renderLicenseSection(data.License)} license.
+  This project is licensed under the ${renderLicenseSection(data.license)} license.
   Here is the license link for ${data.license} ${renderLicenseLink(data.license)} 
   # Contributing
-  ​Contributors: ${data.Contributing}
+  ​Contributors: ${data.contributions}
   # Tests
-  The following is needed to run the test: ${data.Tests}
+  The following is needed to run the test: ${data.tests}
   # Questions
-  If you have any questions about the repo, open an issue or contact ${data.Username} directly at : ${data.Email}
+  If you have any questions about the repo, open an issue or contact ${data.questions}
 `;
 }
 
